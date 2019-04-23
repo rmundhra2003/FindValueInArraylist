@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.Collections;
 import java.util.Random;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -36,5 +37,9 @@ public class Main {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        //Return random element from arraylist
+        Collections.shuffle(intList);
+        System.out.println("This is a random number from list: " +
+        ((intList.size() != 0 ? +intList.get(1): "List is empty")));
     }
 }
